@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A386b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="wut" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="FoZ-cM-38E">
+                                <rect key="frame" x="16" y="28" width="568" height="445"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1By-CT-528">
+                                <rect key="frame" x="16" y="571" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="fnO-GX-iN5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="who" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LMi-i2-bER">
+                                <rect key="frame" x="16" y="481" width="568" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="9Ud-xl-fQz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9Ud-xl-fQz"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gEp-QH-Xqh">
+                                <rect key="frame" x="474" y="567" width="110" height="30"/>
+                                <state key="normal" title="faceboook 2">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fbShare2:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ppm-hs-jAY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ser-8X-jda">
+                                <rect key="frame" x="356" y="567" width="110" height="30"/>
+                                <state key="normal" title="faceboook 1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="fbShare1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1wc-y9-G5l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="FoZ-cM-38E" secondAttribute="bottom" constant="127" id="0ix-8h-IDj"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="gEp-QH-Xqh" secondAttribute="bottom" constant="3" id="1YR-o8-2Y2"/>
+                            <constraint firstItem="LMi-i2-bER" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="2Lz-2y-pmE"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1By-CT-528" secondAttribute="bottom" constant="8" id="2XM-Ef-Jjp"/>
+                            <constraint firstItem="FoZ-cM-38E" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="3Ta-Op-X6s"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="1By-CT-528" secondAttribute="bottom" constant="8" symbolic="YES" id="57c-Bj-xcc"/>
+                            <constraint firstItem="LMi-i2-bER" firstAttribute="top" secondItem="FoZ-cM-38E" secondAttribute="bottom" constant="8" id="7mF-SK-6qr"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LMi-i2-bER" secondAttribute="bottom" constant="8" id="AlR-b7-KaP"/>
+                            <constraint firstItem="1By-CT-528" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="GfD-j5-Xyk"/>
+                            <constraint firstItem="gEp-QH-Xqh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="JO9-XK-YfB"/>
+                            <constraint firstItem="LMi-i2-bER" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="OkG-HA-iXd"/>
+                            <constraint firstItem="FoZ-cM-38E" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="SSu-ZP-ZXS"/>
+                            <constraint firstItem="1By-CT-528" firstAttribute="trailing" secondItem="LMi-i2-bER" secondAttribute="trailing" id="UUg-Oj-bCW"/>
+                            <constraint firstItem="LMi-i2-bER" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="XYz-f3-PWo"/>
+                            <constraint firstItem="1By-CT-528" firstAttribute="top" secondItem="LMi-i2-bER" secondAttribute="bottom" constant="8" symbolic="YES" id="d7c-6N-IcT"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ser-8X-jda" secondAttribute="bottom" constant="3" id="kOn-rL-ofZ"/>
+                            <constraint firstItem="gEp-QH-Xqh" firstAttribute="leading" secondItem="Ser-8X-jda" secondAttribute="trailing" constant="8" id="mzo-ta-BMF"/>
+                            <constraint firstItem="1By-CT-528" firstAttribute="top" secondItem="LMi-i2-bER" secondAttribute="bottom" constant="8" id="njF-Ut-YpW"/>
+                            <constraint firstItem="FoZ-cM-38E" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="s0x-g5-DqG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="XYz-f3-PWo"/>
+                                <exclude reference="njF-Ut-YpW"/>
+                                <exclude reference="2XM-Ef-Jjp"/>
+                                <exclude reference="AlR-b7-KaP"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="kbm-OI-9Hu" appends="YES" id="ldG-zv-Zkb"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="swipe" destination="kbm-OI-9Hu" id="cxL-9K-AD0"/>
+                        <outlet property="wenLabel" destination="1By-CT-528" id="RwP-jk-CuA"/>
+                        <outlet property="whoLabel" destination="LMi-i2-bER" id="MbW-ST-U5z"/>
+                        <outlet property="wutLabel" destination="FoZ-cM-38E" id="qoz-FW-TgY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="kbm-OI-9Hu">
+                    <connections>
+                        <action selector="swipeAction:" destination="vXZ-lx-hvc" id="0nZ-q7-pFI"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
